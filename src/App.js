@@ -16,12 +16,12 @@ function App() {
     <Router>
       <TopBar />
       <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/register" element={user ? <Home /> : <Register />} />
-        <Route path="/login" element={user ? <Home /> : <Login />} />
-        <Route path="/write" element={user ? <Write /> : <Register />} />
-        <Route path="/settings" element={user ? <Settings /> : <Register />} />
-        <Route path="/post/:postId" element={<Single />} />
+        <Route path="https://blogspot-api.onrender.com/" exact element={<Home />} />
+        <Route path="https://blogspot-api.onrender.com/register" element={user ? <Home /> : <Register />} />
+        <Route path="https://blogspot-api.onrender.com/login" element={user ? <Home /> : <Login />} />
+        <Route path="https://blogspot-api.onrender.com/write" element={user ? <Write /> : <Register />} />
+        <Route path="https://blogspot-api.onrender.com/settings" element={user ? <Settings /> : <Register />} />
+        <Route path="https://blogspot-api.onrender.com/post/:postId" element={<Single />} />
         {/* <Route path="/about" element={<About />} /> */}
       </Routes>
     </Router>
