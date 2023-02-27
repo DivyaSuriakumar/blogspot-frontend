@@ -1,0 +1,119 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f5f5f5; */
+
+    /* padding-top: 50px; */
+  }
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .App1{
+    background-image: url("https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    padding-bottom: 30px;
+  }
+  .contact{
+    position: relative;
+    opacity: 0.75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .contact{
+    min-height: 100%;
+  }
+  
+  .contact-us{
+    text-align: center;
+    padding: 100px;
+  }
+  
+  .contact-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-hr{
+    width: 100px;
+    border: 1px solid #ff0026;
+    margin-bottom: 30px;
+  }
+  
+  .contact-det{
+    margin-right: 200px;
+    margin-left: 100px;
+  }
+  
+  .c-form{
+    margin-right: 100px;
+    margin-left: 100px;
+    border: 1px solid gray;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: white;
+    
+  }
+  
+  .det-fairy{
+    font-size: 50px;
+    margin-bottom: 20px;
+    /* color: white; */
+  }
+  
+  .ask{
+    font-size: 30px;
+  }
+  
+  .ic{
+    margin-right: 18px;
+    color: #ff0026;
+  }
+  
+  .contact-span{
+    font-size: 18px;
+    color: white;
+  }
+  
+  .c-email, .c-subject{
+    padding-right: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 17px;
+    margin-bottom: 7px;
+    background-color: #f5f5f5;
+    border: 1px solid grey;
+  }
+  
+  .c-msg{
+    padding-right: 257px;
+    padding-top: 5px;
+    padding-bottom: 80px;
+    padding-left: 5px;
+    font-size: 17px;
+    background-color: #f5f5f5;
+    border: 1px solid grey;
+    margin-bottom: 7px;
+  }
+  
+  .c-btn{
+    text-decoration: none;
+    background-color: #ff0026;
+    text-align: center;
+    border: white;
+    align-items: center;
+    font-size: 17px;
+    padding: 15px 20px;
+    border-radius: 10px ;
+    margin-top: 0;
+    color: white;
+  }
