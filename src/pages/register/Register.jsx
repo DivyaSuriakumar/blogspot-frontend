@@ -13,12 +13,12 @@ export default function Register() {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axios.post("https://blogspot-api.onrender.com/api/auth/register", {
+      const res = await axios.post("/auth/register", {
         username,
         email,
         password,
       });
-      res.data && window.location.replace("https://blogspot-api.onrender.com/api/login");
+      res.data && window.location.replace("/login");
     } catch (err) {
       setError(true);
     }
