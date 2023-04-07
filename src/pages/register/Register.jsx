@@ -21,7 +21,7 @@ export default function Register() {
         password,
       });
       // res.data && window.location.replace("/");
-      res.data && navigate("/");
+      res.data && navigate("/login");
     } catch (err) {
       setError(true);
     }
