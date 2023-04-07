@@ -18,7 +18,7 @@ export default function Register() {
         email,
         password,
       });
-      res.data && window.location.replace("https://blogspot-vnc5.onrender.com/login");
+      res.data && window.location.replace("https://blogspot-api.onrender.com/api/login");
     } catch (err) {
       setError(true);
     }
