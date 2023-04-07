@@ -31,8 +31,9 @@ export default function Write() {
     try {
       const res = await axios.post("https://blogspot-api.onrender.com/api/posts", newPost);
       // window.location.replace("/post/" + res.data._id);
+      navigate("/post/" + res.data._id);
       // window.location.replace(`/post/${res.data._id}`);
-      navigate(`/post/${res.data._id}`);
+      // navigate(`/post/${res.data._id}`);
     } catch (err) {}
   };
 
