@@ -15,7 +15,7 @@ function App() {
   const { user } = useContext(Context);
   return (
     <div>
-    <Favicon url="http://oflisback.github.io/react-favicon/img/github.ico"></Favicon>
+    <Favicon url="https://raw.githubusercontent.com/DivyaSuriakumar/blogspot-frontend/main/public/favicon.ico"></Favicon>
     <Router>
       <TopBar />
       <Routes>
