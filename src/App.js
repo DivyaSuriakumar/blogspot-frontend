@@ -9,10 +9,13 @@ import About from "./pages/about/About";
 import React, { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Context } from "./context/Context";
+import Favicon from "react-favicon";
 
 function App() {
   const { user } = useContext(Context);
   return (
+    <div>
+    <Favicon url="http://oflisback.github.io/react-favicon/img/github.ico"></Favicon>
     <Router>
       <TopBar />
       <Routes>
@@ -25,6 +28,7 @@ function App() {
         {/* <Route path="/about" element={<About />} /> */}
       </Routes>
     </Router>
+    </div>
   );
 }
 
