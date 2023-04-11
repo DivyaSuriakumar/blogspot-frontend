@@ -110,6 +110,7 @@ header {
     padding: 14px 2%;
     transition: 0.2s;
   }
+
   .navbar li {
     padding: 5px 0;
     margin: 0px 20px;
@@ -119,16 +120,19 @@ header {
 @media (max-width: 900px) {
   .menu-icon {
     display: block;
+    padding: 0;
+    border: none;
+    background: none;
   }
 
   .navbar {
     position: absolute;
     top: 100%;
     right: -100%;
-    width: 270px;
-    height: 26vh;
-    background: #f0eeed;
-    /* F0EEED   CDDEFF*/
+    width: 360px;
+    /* height: 26vh; */
+    /* background: #f0eeed; */
+    background-color: #A5D7E8;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -150,5 +154,24 @@ header {
 
   .navbar.open {
     right: 2%;
+  }
+
+  .navbar li {
+    display: block;
+    text-align: center;
+    padding: 10px 100px;
+    border-radius: 5px;
+  }
+
+  .navbar li:hover {
+    background-color: #93BFCF;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    position: absolute;
   }
 }

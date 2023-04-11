@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./topbar.css";
+import React, { useState } from 'react';
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
@@ -9,16 +10,18 @@ export default function TopBar() {
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
   };
-
+  const handleMenuIconClick = () => {
+    document.querySelector(".navbar").classList.toggle("open");
+  };
   //navbar toggle
   // let menu = document.querySelector(".menu-icon");
   // let navbar = document.querySelector(".navbar");
-  window.onload = function(){
-  document.querySelector(".menu-icon").onclick = () => {
-    document.querySelector(".menu-icon").classList.toggle("bx-x");
-    document.querySelector(".navbar").classList.toggle("open");
-  };
-  }
+  // window.onload = function(){
+  // document.querySelector(".menu-icon").onclick = () => {
+  //   document.querySelector(".menu-icon").classList.toggle("bx-x");
+  //   document.querySelector(".navbar").classList.toggle("open");
+  // };
+  // }
   return (
     <header>
       <div className="logo">
@@ -83,7 +86,8 @@ export default function TopBar() {
           </ul>
         )}
         {/* <i className="topSearchIcon fa-solid fa-magnifying-glass"></i> */}
-        <div className="menu-icon fa-solid fa-bars"></div>
+        {/* <div className="menu-icon fa-solid fa-bars"></div> */}
+        <button className="menu-icon fa-solid fa-bars" onClick={handleMenuIconClick}></button>
       </div>
     </header>
 
