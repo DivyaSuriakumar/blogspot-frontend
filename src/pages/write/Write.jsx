@@ -25,11 +25,11 @@ export default function Write() {
       data.append("file", file);
       newPost.photo = filename;
       try {
-        await axios.post("https://blogspotapi.onrender.com/api/upload", data);
+        await axios.post("https://blogspot-api.onrender.com/api/upload", data);
       } catch (err) {}
     }
     try {
-      const res = await axios.post("https://blogspotapi.onrender.com/api/posts", newPost);
+      const res = await axios.post("https://blogspot-api.onrender.com/api/posts", newPost);
       // window.location.replace("/post/" + res.data._id);
       navigate("/post/" + res.data._id);
       // window.location.replace(`/post/${res.data._id}`);

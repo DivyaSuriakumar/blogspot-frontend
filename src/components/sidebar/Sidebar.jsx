@@ -9,7 +9,7 @@ export default function Sidebar() {
 
   useEffect(() => {
     const getCats = async () => {
-      const res = await axios.get("https://blogspotapi.onrender.com/api/categories");
+      const res = await axios.get("https://blogspot-api.onrender.com/api/categories");
       setCats(res.data);
     };
     getCats();
