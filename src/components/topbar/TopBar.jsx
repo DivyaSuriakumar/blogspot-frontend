@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = "https://blogspot-api.onrender.com/images/";
+  const PF = "https://blogspotapi.onrender.com/images/";
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
   };
